@@ -6208,4 +6208,33 @@ h6 {
   font-size: 12px;
 }
 
+
+
+
+
+.book_btn {
+    display: flex;
+    gap: 10px; /* Adds space between buttons */
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cv-btn {
+    background-color: #DB9A64; /* Customize the button color */
+    color: white;
+}
+
+.cv-btn:hover {
+    background-color: #b3764a;
+}
+
 /*# sourceMappingURL=style.css.map */
