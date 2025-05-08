@@ -41,14 +41,6 @@ Detailed information about my professional experiences, educational background, 
 ### 📄 Resume
 Download my resume directly from the website.
 
----
-
-## 📸 Preview
-
-![Portfolio Screenshot](https://your-image-hosting.com/portfolio-screenshot.png)
-
----
-
 ## 🚀 Getting Started
 
 To view the portfolio locally:
