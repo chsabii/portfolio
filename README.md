@@ -1,4 +1,3 @@
-![Portfolio Banner](https://your-image-hosting.com/banner.png)
 
 # 👨‍💻 Sohaib Nadeem — Data Scientist Portfolio
 
