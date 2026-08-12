@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-label="Machine Learning and NLP">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="360">
+      <stop offset="0%" stop-color="#171410"/>
+      <stop offset="100%" stop-color="#2a221c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="360" fill="none" stroke="#DB9A64" stroke-opacity="0.18"/>
+  <circle cx="720" cy="40" r="90" fill="#DB9A64" opacity="0.06"/>
+  <circle cx="80" cy="300" r="70" fill="#E8C496" opacity="0.05"/>
+  <text x="28" y="42" fill="#DB9A64" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">Machine Learning and NLP</text>
+  
+      <g transform="translate(400,155)">
+        <circle cx="-70" cy="-30" r="9" fill="#DB9A64"/>
+        <circle cx="-70" cy="0" r="9" fill="#E8C496"/>
+        <circle cx="-70" cy="30" r="9" fill="#CCAD85"/>
+        <circle cx="0" cy="-18" r="11" fill="#DB9A64"/>
+        <circle cx="0" cy="18" r="11" fill="#E8C496"/>
+        <circle cx="70" cy="0" r="13" fill="#CCAD85"/>
+        <line x1="-61" y1="-30" x2="-11" y2="-18" stroke="#DB9A64" stroke-width="1.6"/>
+        <line x1="-61" y1="0" x2="-11" y2="-18" stroke="#DB9A64" stroke-width="1.6"/>
+        <line x1="-61" y1="0" x2="-11" y2="18" stroke="#E8C496" stroke-width="1.6"/>
+        <line x1="-61" y1="30" x2="-11" y2="18" stroke="#CCAD85" stroke-width="1.6"/>
+        <line x1="11" y1="-18" x2="57" y2="0" stroke="#DB9A64" stroke-width="1.8"/>
+        <line x1="11" y1="18" x2="57" y2="0" stroke="#E8C496" stroke-width="1.8"/>
+      </g>
+        
+  <rect x="28" y="308" width="116" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="86.2" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">Scikit-learn</text><rect x="154.39999999999998" y="308" width="75" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="192.1" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">PyTorch</text><rect x="239.79999999999995" y="308" width="59" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="269.3" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">spaCy</text><rect x="308.79999999999995" y="308" width="51" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="334.2" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">NLTK</text>
+</svg>

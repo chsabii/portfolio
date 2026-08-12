@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-label="AI Voice Agents">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="360">
+      <stop offset="0%" stop-color="#171410"/>
+      <stop offset="100%" stop-color="#2a221c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="360" fill="none" stroke="#DB9A64" stroke-opacity="0.18"/>
+  <circle cx="720" cy="40" r="90" fill="#DB9A64" opacity="0.06"/>
+  <circle cx="80" cy="300" r="70" fill="#E8C496" opacity="0.05"/>
+  <text x="28" y="42" fill="#DB9A64" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">AI Voice Agents</text>
+  
+      <g transform="translate(400,155)">
+        <rect x="-18" y="-52" width="36" height="64" rx="18" fill="#2a221c" stroke="#DB9A64" stroke-width="2.5"/>
+        <line x1="0" y1="12" x2="0" y2="32" stroke="#E8C496" stroke-width="3" stroke-linecap="round"/>
+        <path d="M-28 4 A28 28 0 0 0 28 4" fill="none" stroke="#DB9A64" stroke-width="2.5"/>
+        <line x1="-22" y1="32" x2="22" y2="32" stroke="#CCAD85" stroke-width="3" stroke-linecap="round"/>
+        <path d="M48 -20 Q62 -8 48 4" fill="none" stroke="#E8C496" stroke-width="2.2"/>
+        <path d="M62 -28 Q82 -8 62 12" fill="none" stroke="#DB9A64" stroke-width="2.2" opacity="0.7"/>
+        <path d="M-48 -20 Q-62 -8 -48 4" fill="none" stroke="#E8C496" stroke-width="2.2"/>
+        <path d="M-62 -28 Q-82 -8 -62 12" fill="none" stroke="#DB9A64" stroke-width="2.2" opacity="0.7"/>
+      </g>
+        
+  <rect x="28" y="308" width="67" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="61.6" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">Twilio</text><rect x="105.19999999999999" y="308" width="75" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="142.9" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">Whisper</text><rect x="190.59999999999997" y="308" width="100" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="240.6" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">ElevenLabs</text><rect x="300.59999999999997" y="308" width="43" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="321.9" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">LLM</text>
+</svg>

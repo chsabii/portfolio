@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-label="Power BI Dashboards">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="360">
+      <stop offset="0%" stop-color="#171410"/>
+      <stop offset="100%" stop-color="#2a221c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="360" fill="none" stroke="#DB9A64" stroke-opacity="0.18"/>
+  <circle cx="720" cy="40" r="90" fill="#DB9A64" opacity="0.06"/>
+  <circle cx="80" cy="300" r="70" fill="#E8C496" opacity="0.05"/>
+  <text x="28" y="42" fill="#DB9A64" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">Power BI Dashboards</text>
+  
+      <g transform="translate(400,168)">
+        <rect x="-28" y="-8" width="22" height="48" rx="3" fill="#DB9A64"/>
+        <rect x="-2" y="-28" width="22" height="68" rx="3" fill="#E8C496"/>
+        <rect x="24" y="-48" width="22" height="88" rx="3" fill="#CCAD85"/>
+        <rect x="-110" y="-52" width="64" height="40" rx="8" fill="#2a221c" stroke="#DB9A64" stroke-width="1.6"/>
+        <circle cx="-78" cy="-32" r="12" fill="none" stroke="#E8C496" stroke-width="4" stroke-dasharray="12 20"/>
+        <rect x="70" y="-20" width="70" height="8" rx="4" fill="#DB9A64" opacity="0.85"/>
+        <rect x="70" y="-4" width="52" height="8" rx="4" fill="#E8C496" opacity="0.7"/>
+        <rect x="70" y="12" width="60" height="8" rx="4" fill="#CCAD85" opacity="0.65"/>
+      </g>
+        
+  <rect x="28" y="308" width="84" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="69.8" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">Power BI</text><rect x="121.6" y="308" width="43" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="142.9" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">DAX</text><rect x="174.2" y="308" width="108" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="228.3" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">Power Query</text><rect x="292.4" y="308" width="43" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="313.7" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">SQL</text>
+</svg>

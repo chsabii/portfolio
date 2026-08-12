@@ -26,11 +26,15 @@
     <link rel="stylesheet" href="css/slicknav.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio-upgrade.css">
+    <script src="js/theme.js"></script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
-    <!--[if lte IE 9]>
+    
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
@@ -54,12 +58,7 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="index.html">home</a></li>
-                                            <li><a href="Services.html">Services</a></li>
-                                            
-                                            
-                                            <li><a href="works.html">work </a>
-                                                
-                                            </li>
+                                            <li><a href="services.html">Services</a></li>
                                             <li><a href="experience.html">Experiences</a></li>
                                             <li><a href="education.html">Education<i class="ti-angle-down"></i>
                                             </a>
@@ -117,6 +116,29 @@
         </div>
             <!--/ bradcam_area  -->
 
+    <section class="page-block">
+        <div class="container">
+            <div class="section_intro" style="margin-bottom:36px;">
+                <h3>About Sohaib</h3>
+                <p>Data scientist and automation specialist helping businesses turn messy data, ads, and operations into systems that actually perform.</p>
+            </div>
+            <div class="about-grid">
+                <article class="about-card">
+                    <h4>Who I am</h4>
+                    <p>I build practical AI, analytics, and growth systems — from agentic workflows and RAG apps to Power BI dashboards and paid media tracking.</p>
+                </article>
+                <article class="about-card">
+                    <h4>Who I help</h4>
+                    <p>Founders, marketing teams, and operations leads who need cleaner data, faster follow-ups, and campaigns they can measure with confidence.</p>
+                </article>
+                <article class="about-card">
+                    <h4>How I work</h4>
+                    <p>Start with the business goal, map the workflow, then ship a working system: tracking, automation, dashboards, or AI agents that stay in production.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- service_area start  -->
     <div class="service_area colord_bg" style="padding: 30px 0 30px 0;" >
         <div class="container">
@@ -124,9 +146,9 @@
                 <div class="col-lg-12">
             <h3 class="mb-30" style="color: #DB9A64;">Skills</h3>
             <div class="row">
-                <div class="col-lg-4">
-                    <h5 style="color:#fff; ;">Soft Skills</h5>
-                    <blockquote class="generic-blockquote" style="background: #0000; color: #fff;">
+                <div class="col-lg-4 about-skill-card">
+                    <h5>Soft Skills</h5>
+                    <blockquote class="generic-blockquote">
                         <ul class="unordered-list">
                             <li>Ms Excel Specialist</li>
                             <li>Power Point </li>
@@ -139,9 +161,9 @@
                         </ul>
                     </blockquote>
                 </div>
-                <div class="col-lg-4">
-                    <h5 style="color:#fff; ;">Hard Skills</h5>
-                    <blockquote class="generic-blockquote" style="background: #0000; color: #fff;">
+                <div class="col-lg-4 about-skill-card">
+                    <h5>Hard Skills</h5>
+                    <blockquote class="generic-blockquote">
                         <ul class="unordered-list">
                             <li>Power BI</li>
                             <li>Dynamic 365</li>
@@ -154,9 +176,9 @@
                         </ul>
                     </blockquote>
                 </div>
-                <div class="col-lg-4">
-                    <h5 style="color:#fff; ;">Languages</h5>
-                    <blockquote class="generic-blockquote" style="background: #0000; color: #fff;">
+                <div class="col-lg-4 about-skill-card">
+                    <h5>Languages</h5>
+                    <blockquote class="generic-blockquote">
                         <ul class="unordered-list">
                             <li>English</li>
                             <li>Punjabi</li>
@@ -177,19 +199,29 @@
     </div>
     <!-- service_area end  -->
 
-        <!-- testimonial_area  -->
-        <!-- <div class="testimonial_area " style="padding: 30px 0 30px 0;">
-            <div class="container">
-                <h3 class="mb-30" style="color: #DB9A64;"></h3>
-                <div class="row">
-                    <div class="col-lg-6">
-                        
-                    </div>
-                    
+    <section class="page-block">
+        <div class="container">
+            <div class="section_intro">
+                <h3>What clients can expect</h3>
+                <p>Clear communication, production-minded delivery, and systems built around business outcomes — not just tools.</p>
             </div>
+            <div class="about-grid">
+                <article class="about-card">
+                    <h4>Business-first</h4>
+                    <p>Every build is tied to a result: more qualified leads, faster ops, better reporting, or lower manual workload.</p>
+                </article>
+                <article class="about-card">
+                    <h4>End-to-end</h4>
+                    <p>I can connect ads, CRM, data, and AI so your stack works as one system instead of disconnected tools.</p>
+                </article>
+                <article class="about-card">
+                    <h4>Ready to talk</h4>
+                    <p>Share a goal or a bottleneck. I’ll map a practical next step and the stack needed to get there.</p>
+                    <a class="boxed-btn3-line" href="contact.html">Contact me</a>
+                </article>
             </div>
-        </div> -->
-        <!-- /testimonial_area  -->
+        </div>
+    </section>
 
     <!-- footer start -->
  <footer class="footer">
@@ -203,30 +235,22 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="single_links d-flex justify-content-between align-items-center">
-                    <a href="https://www.facebook.com/sohaibna123/"> <span>Facebook</span>
-                         <i class="fa-brands fa-facebook-f"></i> </a>
-                    </div>
+                        <div class="row social-row justify-content-center">
+                <div class="col-md-5">
+                    <a class="social-card" href="https://www.linkedin.com/in/sohaibnadeem44/" target="_blank" rel="noopener">
+                        <span class="social-logo linkedin" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+                        </span>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <div class="single_links d-flex justify-content-between align-items-center">
-                    <a href="https://x.com/choudarysohaib2"><span>X.com</span>
-                        <i class="fa-solid fa-x"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="single_links d-flex justify-content-between align-items-center">
-                    <a href="https://www.youtube.com/channel/UCsP3kfStm5ovdw-Q_75z6vQ"><span>Youtube</span>
-                         <i class="fa-brands fa-youtube"></i> </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="single_links d-flex justify-content-between align-items-center">
-                    <a href="https://www.linkedin.com/in/sohaibnadeem44/"> <span>Linkedin</span>
-                        <i class="fa fa-linkedin"></i> </a>
-                    </div>
+                <div class="col-md-5">
+                    <a class="social-card" href="https://www.youtube.com/channel/UCsP3kfStm5ovdw-Q_75z6vQ" target="_blank" rel="noopener">
+                        <span class="social-logo youtube" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.38.46A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.4 12 20.4 12 20.4s7.5 0 9.38-.46a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.75 15.57V8.43L15.84 12l-6.09 3.57z"/></svg>
+                        </span>
+                        <span>YouTube</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -279,6 +303,7 @@
 
 
     <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
 </body>
 
 </html>

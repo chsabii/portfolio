@@ -1,0 +1,25 @@
+1-  Add a colorful particle/dash background like the reference image, with tiny blue, purple, pink, red, orange, and yellow particles across the screen.
+Make the particles smoothly react to the mouse cursor — nearby particles should move/push away from the cursor and gently return to their original positions.
+Use smooth, fluid animation with subtle floating movement, `requestAnimationFrame`, and good performance.
+Keep the effect minimal, premium, and behind all portfolio content without affecting clicks or scrolling.
+
+2-  Update my portfolio **Services** section using my existing services page as the base.
+
+Keep the relevant existing services but modernize their descriptions, skills, and presentation. Add my latest services: **AI Agents & Agentic AI, LangChain & LLM Applications, Paid Media Marketing Automation, Business/API Integrations, Bulk Data & Cold/Warm Lead Generation, AI Voice/Call Agents, and Power BI Dashboards & BI Automation**.
+
+For every service, create professional portfolio-ready content with: **service title, short description, what I can deliver, key technologies/tools, business benefits, and a relevant high-quality visual/image or illustration**. Make the new services feel like my current expert-level skills, not beginner services.
+
+Organize the services in a modern, premium layout with consistent cards/sections, strong headings, icons/images, subtle animations, and responsive design. Do not remove useful existing work or break the current website structure, navigation, links, or styling; update only the Services content and assets needed for this upgrade.
+
+
+3- Update my **Experience** page to reflect my current professional expertise, while keeping the existing experience and history intact.
+
+Add modern experience areas including **Marketing Tools & Automation, Data Scraping & Data Extraction, RAG (Retrieval-Augmented Generation) Systems, LLM Model Training & Refinement, AI/Agentic AI Workflows, and Advanced Data/AI Automation**.
+
+Also add my hands-on **Paid Media Marketing experience**: Meta/Google Ads setup and optimization, Pixel & Conversion API integrations, dataset/event tracking, audience creation and segmentation, custom/lookalike audiences, campaign automation, retargeting, conversion tracking, performance analysis, and fully optimized advertising campaigns.
+
+Present each experience professionally with **role/title, responsibilities, technologies/tools, systems built, business impact, and key skills**. Use modern timeline/cards with relevant icons or visuals, strong hierarchy, subtle animations, and responsive design. Make the page communicate that these are **practical, real-world skills developed over the last 2+ years**, not just technologies I have studied.
+
+Do not delete my existing experience. Improve the wording and structure of the old entries where appropriate, add the new experience sections naturally, and preserve the existing navigation, footer, styling system, and website functionality.
+ 
+ 

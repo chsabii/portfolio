@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-label="Data Mining">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="360">
+      <stop offset="0%" stop-color="#171410"/>
+      <stop offset="100%" stop-color="#2a221c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="360" fill="url(#bg)"/>
+  <rect x="0" y="0" width="800" height="360" fill="none" stroke="#DB9A64" stroke-opacity="0.18"/>
+  <circle cx="720" cy="40" r="90" fill="#DB9A64" opacity="0.06"/>
+  <circle cx="80" cy="300" r="70" fill="#E8C496" opacity="0.05"/>
+  <text x="28" y="42" fill="#DB9A64" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600">Data Mining</text>
+  
+      <g transform="translate(400,155)">
+        <circle cx="0" cy="0" r="18" fill="#DB9A64"/>
+        <circle cx="-58" cy="-8" r="12" fill="#E8C496"/>
+        <circle cx="54" cy="-16" r="10" fill="#CCAD85"/>
+        <circle cx="-36" cy="42" r="9" fill="#DB9A64" opacity="0.75"/>
+        <circle cx="42" cy="38" r="11" fill="#E8C496" opacity="0.8"/>
+        <circle cx="8" cy="-48" r="8" fill="#CCAD85"/>
+        <line x1="-46" y1="-8" x2="-18" y2="0" stroke="#DB9A64" stroke-width="1.5"/>
+        <line x1="18" y1="-6" x2="44" y2="-16" stroke="#E8C496" stroke-width="1.5"/>
+        <line x1="-12" y1="14" x2="-30" y2="36" stroke="#CCAD85" stroke-width="1.5"/>
+        <line x1="14" y1="14" x2="34" y2="32" stroke="#DB9A64" stroke-width="1.5"/>
+        <line x1="4" y1="-18" x2="8" y2="-40" stroke="#E8C496" stroke-width="1.5"/>
+      </g>
+        
+  <rect x="28" y="308" width="67" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="61.6" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">Python</text><rect x="105.19999999999999" y="308" width="59" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="134.7" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">Spark</text><rect x="174.2" y="308" width="51" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="199.6" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">Weka</text><rect x="235.0" y="308" width="43" height="26" rx="13" fill="#2a221c" stroke="#DB9A64" stroke-width="1"/><text x="256.3" y="325" text-anchor="middle" fill="#E8C496" font-family="Segoe UI, Arial, sans-serif" font-size="11">SQL</text>
+</svg>

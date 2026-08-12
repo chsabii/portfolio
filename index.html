@@ -26,10 +26,13 @@
     <link rel="stylesheet" href="css/slicknav.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio-upgrade.css">
+    <script src="js/theme.js"></script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -55,11 +58,6 @@
                                         <ul id="navigation">
                                             <li><a href="index.html">home</a></li>
                                             <li><a href="services.html">Services</a></li>
-                                            
-                                            
-                                            <li><a href="works.html">work </a>
-                                                
-                                            </li>
                                             <li><a href="experience.html">Experiences</a></li>
                                             <li><a href="education.html">Education<i class="ti-angle-down"></i>
                                             </a>
@@ -108,7 +106,7 @@
                         <div class="slider_text">
                             <h3>Hi, I am Sohaib <br>
                                 <span>Data Scientist</span></h3>
-                        <a class="boxed-btn3-line" href="works.html">View Works</a>
+                        <a class="boxed-btn3-line" href="services.html">View Services</a>
                         </div>
                     </div>
                     <div class="my_img d-none d-lg-block">
@@ -145,30 +143,30 @@
                     <div class="progress_skills">
                         <div class="single_progress">
                             <div class="label d-flex justify-content-between">
-                                <span> Python / ML</span>
-                                <span>88%</span>
+                                <span>Python / ML</span>
+                                <span class="progress-value">88%</span>
                             </div>
-                                <div class="progress">
-                                        <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-progress="88" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                         <div class="single_progress">
-                                <div class="label d-flex justify-content-between">
-                                        <span>Data Analysis & Visulization</span>
-                                        <span>74%</span>
-                                    </div>
-                                <div class="progress">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>
+                            <div class="label d-flex justify-content-between">
+                                <span>Data Analysis & Visualization</span>
+                                <span class="progress-value">74%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-progress="74" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                         <div class="single_progress">
-                                <div class="label d-flex justify-content-between">
-                                        <span>AI Models</span>
-                                        <span>55%</span>
-                                    </div>
-                                <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>
+                            <div class="label d-flex justify-content-between">
+                                <span>AI Models</span>
+                                <span class="progress-value">55%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-progress="55" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -192,10 +190,8 @@
                         <div class="icon">
                             <img src="img/svg_icon/1.svg" alt="">
                         </div>
-                        <h3>
-                                Data Visualization
-                        </h3>
-                        <p>As data visualization, Make Dashboard in Tableau and PowerBI. My role is to simplify complex data, making it accessible and understandable</p>
+                        <h3>AI Agents & Agentic AI</h3>
+                        <p>Autonomous AI agents that plan, use tools, and complete multi-step business workflows with production-ready guardrails.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -203,10 +199,8 @@
                         <div class="icon">
                             <img src="img/svg_icon/2.svg" alt="">
                         </div>
-                        <h3>
-                               Data Analyst
-                        </h3>
-                        <p> Inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making.</p>
+                        <h3>LangChain & LLM Apps</h3>
+                        <p>RAG systems, intelligent chatbots, and LLM applications grounded in your business data for accurate, usable AI.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -214,10 +208,8 @@
                         <div class="icon">
                             <img src="img/svg_icon/3.svg" alt="">
                         </div>
-                        <h3>
-                               CRM specialist
-                        </h3>
-                        <p>Dynamics 365 is a comprehensive suite of business applications that enables organizations to unify data, streamline operations, and drive business growth through integrated CRM and ERP capabilities.</p>
+                        <h3>Power BI & Automation</h3>
+                        <p>Executive dashboards, BI automation, paid media tracking, and integrations that turn data into measurable growth.</p>
                     </div>
                 </div>
             </div>
@@ -231,72 +223,40 @@
     </div>
     <!-- service_area end  -->
 
-    <!-- gallery_area start  -->
-    <div class="gallery_area">
+    <section class="attract-section">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title mb-50">
-                        <h3>My Works</h3>
+            <div class="attract-wrap">
+                <div class="attract-copy">
+                    <span class="attract-kicker">For businesses and growing brands</span>
+                    <h3>Turn data, ads, and AI into revenue — not extra work.</h3>
+                    <p>I help companies automate operations, launch smarter campaigns, and make decisions from live dashboards. If you need a partner who can build the system and make it perform, this is the place to start.</p>
+                    <div class="attract-actions">
+                        <a class="boxed-btn3-line attract-primary" href="https://wa.me/+923340069499">Let’s Talk on WhatsApp</a>
+                        <a class="boxed-btn3-line" href="services.html">See Services</a>
+                        <a class="boxed-btn3-line" href="contact.html">Request a Quote</a>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-10">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/1.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Reduce Hotel Cancellation rate</span>
-                                    <a href="works_details.html"><h4>(EDA)Perform/Python</h4></a>
-                                </div>
-                            </div>
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/2.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Building a Recommender System</span>
-                                    <a href="works_details.html"><h4>DM Project</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/3.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Mobile App</span>
-                                    <a href="works_details.html"><h4>Kotlin Project</h4></a>
-                                </div>
-                            </div>
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/4.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Build a Chatbot</span>
-                                    <a href="works_details.html"><h4>Scratch in Python using (NLTK)</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="more_works">
-                                    <a class="boxed-btn3-line" href="works.html">More Works</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="attract-grid">
+                    <article class="attract-card">
+                        <h4>AI that does the work</h4>
+                        <p>Agents, RAG systems, and voice bots that handle leads, support, and internal tasks.</p>
+                    </article>
+                    <article class="attract-card">
+                        <h4>Ads that convert</h4>
+                        <p>Meta and Google setup, Pixel/CAPI tracking, audiences, and campaign optimization.</p>
+                    </article>
+                    <article class="attract-card">
+                        <h4>Dashboards you can trust</h4>
+                        <p>Power BI reporting so founders and teams see KPIs without waiting on spreadsheets.</p>
+                    </article>
+                    <article class="attract-card">
+                        <h4>Systems that connect</h4>
+                        <p>CRM, APIs, and lead pipelines that keep sales, marketing, and data in one flow.</p>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- gallery_area end  -->
+    </section>
 
         <!-- testimonial_area  -->
         <div class="testimonial_area ">
@@ -388,30 +348,22 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="single_links d-flex justify-content-between align-items-center">
-                    <a href="https://www.facebook.com/sohaibna123/"> <span>Facebook</span>
-                         <i class="fa-brands fa-facebook-f"></i> </a>
-                    </div>
+                        <div class="row social-row justify-content-center">
+                <div class="col-md-5">
+                    <a class="social-card" href="https://www.linkedin.com/in/sohaibnadeem44/" target="_blank" rel="noopener">
+                        <span class="social-logo linkedin" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+                        </span>
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
-                <div class="col-md-3">
-                    <div class="single_links d-flex justify-content-between align-items-center">
-                    <a href="https://x.com/choudarysohaib2"><span> X.com </span>
-                        <i class="fa-solid fa-x"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="single_links d-flex justify-content-between align-items-center">
-                    <a href="https://www.youtube.com/channel/UCsP3kfStm5ovdw-Q_75z6vQ"><span>Youtube</span>
-                         <i class="fa-brands fa-youtube"></i> </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="single_links d-flex justify-content-between align-items-center">
-                    <a href="https://www.linkedin.com/in/sohaibnadeem44/"> <span>Linkedin</span>
-                        <i class="fa fa-linkedin"></i> </a>
-                    </div>
+                <div class="col-md-5">
+                    <a class="social-card" href="https://www.youtube.com/channel/UCsP3kfStm5ovdw-Q_75z6vQ" target="_blank" rel="noopener">
+                        <span class="social-logo youtube" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.38.46A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.4 12 20.4 12 20.4s7.5 0 9.38-.46a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.75 15.57V8.43L15.84 12l-6.09 3.57z"/></svg>
+                        </span>
+                        <span>YouTube</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -465,6 +417,8 @@
 
 
     <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/progress-bars.js"></script>
 </body>
 
 </html>

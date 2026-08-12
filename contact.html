@@ -24,10 +24,13 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio-upgrade.css">
+    <script src="js/theme.js"></script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
 <body>
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -53,11 +56,6 @@
                                       <ul id="navigation">
                                           <li><a href="index.html">home</a></li>
                                           <li><a href="services.html">Services</a></li>
-                                          
-                                          
-                                          <li><a href="works.html">work </a>
-                                              
-                                          </li>
                                           <li><a href="experience.html">Experiences</a></li>
                                           <li><a href="education.html">Education<i class="ti-angle-down"></i>
                                           </a>
@@ -109,32 +107,31 @@
                     </div>
                 </div>
                 <!--/ bradcam_area  -->
-  <!-- ================ contact section start ================= -->
-       <script>
-          function initMap() {
-          var uluru = {lat: -25.363, lng: 131.044};
-          var grayStyles = [
-          {
-            featureType: "all",
-            stylers: [
-              { saturation: -90 },
-              { lightness: 50 }
-            ]
-           },
-          {elementType: 'labels.text.fill', stylers: [{color: '#ccdee9'}]}
-          ];
-          var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -31.197, lng: 150.744},
-          zoom: 9,
-          styles: grayStyles,
-          scrollwheel: false
-        });
-      }
-       </script>
-   
-  </head>
-  <body>
-  
+
+  <div class="contact-shell">
+    <div class="section_intro">
+      <h3>Let’s build something useful</h3>
+      <p>Tell me about your business goal — AI automation, ads tracking, dashboards, CRM, or lead systems. I’ll reply with a clear next step.</p>
+    </div>
+
+    <div class="contact-extra-grid">
+      <article class="contact-card">
+        <h4>WhatsApp</h4>
+        <p>Fastest way to start a project conversation.</p>
+        <a class="boxed-btn3-line" href="https://wa.me/+923340069499">Let’s Talk</a>
+      </article>
+      <article class="contact-card">
+        <h4>Email</h4>
+        <p>choudarysohaib786@gmail.com</p>
+        <p>Send a brief anytime. I review queries through the week.</p>
+      </article>
+      <article class="contact-card">
+        <h4>Hours</h4>
+        <p>Mon to Fri, 9am to 6pm</p>
+        <p>Based in Lahore, Pakistan. Hometown: Bahawalpur.</p>
+      </article>
+    </div>
+
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111256.73033521936!2d71.69001209999999!3d29.376940299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90c46c611ad5%3A0xfcdf0da8e103f862!2sBahawalpur%2C%20Punjab!5e0!3m2!1sen!2s!4v1719314404463!5m2!1sen!2s"
       width="800"
@@ -144,70 +141,67 @@
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
     ></iframe>
-        
+
+    <div class="contact-layout">
+      <div>
+        <h2 class="contact-title">Get in Touch</h2>
+        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder="Enter Message"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder="Enter your name">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder="Enter email address">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder="Enter Subject">
+              </div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <button type="submit" class="button button-contactForm btn_4 boxed-btn boxed-btn3-line">Send Message</button>
+          </div>
+        </form>
       </div>
-
-
-      <div class="row">
-        <div class="col-12">
-          <h2 class="contact-title">Get in Touch</h2>
-        </div>
-        <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-            <div class="row">
-              <div class="col-12">
-                <div class="form-group">
-                  
-                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder = 'Enter Message'></textarea>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Enter your name'>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Enter email address'>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder = 'Enter Subject'>
-                </div>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send Message</button>
-            </div>
-          </form>
-        </div>
-        <div class="col-lg-4">
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-home"></i></span>
-            <div class="media-body">
-              <h3>Lahore, Pakistan.</h3>
-              <p>Home Town : Bahawalpur</p>
-              </div>
-          </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-            <div class="media-body">
-              <h3>Mon to Fri 9am to 6pm</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-email"></i></span>
-            <div class="media-body">
-              <h3>choudarysohaib786@gmail.com</h3>
-              <p>Send me your query anytime!</p>
-            </div>
+      <div>
+        <div class="media contact-info">
+          <span class="contact-info__icon"><i class="ti-home"></i></span>
+          <div class="media-body">
+            <h3>Lahore, Pakistan.</h3>
+            <p>Home Town : Bahawalpur</p>
           </div>
         </div>
+        <div class="media contact-info">
+          <span class="contact-info__icon"><i class="ti-tablet"></i></span>
+          <div class="media-body">
+            <h3>Mon to Fri 9am to 6pm</h3>
+            <p>WhatsApp available for project chats</p>
+          </div>
+        </div>
+        <div class="media contact-info">
+          <span class="contact-info__icon"><i class="ti-email"></i></span>
+          <div class="media-body">
+            <h3>choudarysohaib786@gmail.com</h3>
+            <p>Send me your query anytime!</p>
+          </div>
+        </div>
+        <article class="contact-card">
+          <h4>What to include</h4>
+          <p>Your business, the problem, and the outcome you want. I’ll come back with a practical approach.</p>
+        </article>
       </div>
     </div>
-  </section>
+  </div>
   <!-- ================ contact section end ================= -->
 
      <!-- footer start -->
@@ -222,32 +216,24 @@
                   </div>
               </div>
           </div>
-          <div class="row">
-              <div class="col-md-3">
-                  <div class="single_links d-flex justify-content-between align-items-center">
-                  <a href="https://www.facebook.com/sohaibna123/"> <span>Facebook</span>
-                       <i class="fa-brands fa-facebook-f"></i> </a>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="single_links d-flex justify-content-between align-items-center">
-                  <a href="https://x.com/choudarysohaib2"><span>X.com</span>
-                      <i class="fa-solid fa-x"></i></a>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="single_links d-flex justify-content-between align-items-center">
-                  <a href="https://www.youtube.com/channel/UCsP3kfStm5ovdw-Q_75z6vQ"><span>Youtube</span>
-                       <i class="fa-brands fa-youtube"></i> </a>
-                  </div>
-              </div>
-              <div class="col-md-3">
-                  <div class="single_links d-flex justify-content-between align-items-center">
-                  <a href="https://www.linkedin.com/in/sohaibnadeem44/"> <span>Linkedin</span>
-                      <i class="fa fa-linkedin"></i> </a>
-                  </div>
-              </div>
-          </div>
+                      <div class="row social-row justify-content-center">
+                <div class="col-md-5">
+                    <a class="social-card" href="https://www.linkedin.com/in/sohaibnadeem44/" target="_blank" rel="noopener">
+                        <span class="social-logo linkedin" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+                        </span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <a class="social-card" href="https://www.youtube.com/channel/UCsP3kfStm5ovdw-Q_75z6vQ" target="_blank" rel="noopener">
+                        <span class="social-logo youtube" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.38.46A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.4 12 20.4 12 20.4s7.5 0 9.38-.46a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.75 15.57V8.43L15.84 12l-6.09 3.57z"/></svg>
+                        </span>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
       </div>
   </div>
   <div class="copy-right_text">
@@ -294,6 +280,7 @@
   <script src="js/mail-script.js"></script>
 
   <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
 </body>
 
 </html>
